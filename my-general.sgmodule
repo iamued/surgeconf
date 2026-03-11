@@ -1,23 +1,15 @@
 #!name=My General Patch
-#!desc=自定义 General 配置覆盖
-#!system=ios,mac
+#!desc=General patch for Surge 3.5.x
 
 [General]
 internet-test-url = http://www.gstatic.com/generate_204
 proxy-test-url = http://www.gstatic.com/generate_204
 test-timeout = 5
-tls-provider = openssl
-geoip-maxmind-url = https://cdn.jsdelivr.net/gh/JMVoid/ipip2mmdb@release/Country.mmdb
 ipv6 = false
-network-framework = false
 allow-wifi-access = false
-http-listen = 127.0.0.1:6152
-socks5-listen = 127.0.0.1:6153
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local, passenger.t3go.cn, *.sankuai.com
 dns-server = 223.5.5.5, 119.29.29.29, system
-doh-server = https://dns.alidns.com/dns-query
 read-etc-hosts = true
 loglevel = notify
 show-error-page-for-reject = true
 always-real-ip = msftconnecttest.com, msftncsi.com, *.msftconnecttest.com, *.msftncsi.com, *.srv.nintendo.net, *.stun.playstation.net, xbox.*.microsoft.com, *.xboxlive.com, *.battlenet.com.cn, *.battlenet.com, *.blzstatic.cn, *.battle.net
-force-http-engine-hosts = *.ott.cibntv.net, 123.59.31.1, 119.18.193.135, 122.14.246.33, 175.102.178.52, 116.253.24.*, 175.6.26.*, 220.169.153.*
